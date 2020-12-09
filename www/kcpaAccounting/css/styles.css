@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* important -> makes page work? */
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+/* ________Top of Page__________ */
+/* go in order as your page does */
+
+nav {
+    /* when you use Pos. Fixed it removes defeault properties so add width
+    : 100% back in */
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+    display: flex;
+    /* z index is to ensure that all browsers will load nav properly and not in background
+    only works with Position*/
+}
+
+    /* SECTIONS MAIN */
+
+    /* this is how we start making the sections (have a page with 4 "pages"
+    look like one page  */
+
+    /* "fullHeight in Todd video (cleaner code) */
+
+    /* this will style the nav and affect the anchor (a) tags */
+    nav a {
+        color: white;
+        text-decoration: none;
+        /* this (margin auto) + display flex (top) will help make nav look centered */
+        margin: auto;
+        /* margin auto only works on child (a tags) if parent (nav) has display flex */
+    }
+    /* alternate way to modifyNAV (esp. with logos) @min 26ish */
+
+    section {
+        /* goes clockwise (top right bottom left) */
+        padding: 80px;
+        /* this might be an issue later..  (padding would work like it is but not
+        like padding: 80,20,20,20; idk why */
+    }
+
+.allClass {
+    /* this min-height fix will stop your content from overlapping and going
+    into the other pages, it will also adjust to browser size.  */
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* attachment fixed does cool scroll effect */
+    
+}
+
+.hero {
+    /* background-image: url(../img/deskPerson.jpg); */
+    font-size: 30px;
+
+}
+
+    .homeVideo {
+        position: relative;
+        width: 100%;
+        height: 100vh;   
+        /* vh = viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+p {
+    color: white;
+}
+
+    .subSection {
+        height: 25%;
+    }
+
+.about {
+    background-image: url(../img/officeBuildingTall.jpg);
+}
+
+.services {
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+    /* services box 1 */
+    .service {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+        .service h1 {
+            margin: 10px 0px 10px 0px;
+        }
+        
+.contact {
+    background-image: url(../img/redCalculator.jpg);
+}
