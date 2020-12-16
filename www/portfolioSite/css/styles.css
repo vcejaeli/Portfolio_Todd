@@ -60,14 +60,34 @@ nav {
         border-radius: 4px;
     }
 
+
+#contactIcons {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 #instaIcon {
     width: auto;
     height: 30px;
+
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
 }
 #gmailIcon {
     width: auto;
     height: 30px;
+
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
 }
+/* #contactIcons::before {
+    text-decoration: underline;
+    display: inline-block;
+}
+#contactIcons::before:hover {
+    text-decoration: none;
+} */
 
 
     nav a {
@@ -133,13 +153,31 @@ nav {
     height: auto;
 }
 
+.homeBtnBtn {
+    justify-content: center;
+    display: flex;
+}
 #homeBtn {
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    background-color: #e56717;
+    border-radius: 22px;
+    border: none;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+/* 
     background-color: #e56717;
     border-radius: 22px;
     border: none;
     color: white;
     padding: 10px;
-    text-align: center;
+    /* text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -147,14 +185,19 @@ nav {
     cursor: pointer;
     left: 800px;
     top: 750px;
-    position: absolute;
+    position: sticky;
     transition-duration: 0.5s;
-}
-
+*/
 #homeBtn:hover {
     color: #e56717;
     background-color: white;
 }
+#homeBtn:focus {
+    background-color: #20b8cc;
+    color: #fff;
+    outline: none;
+    border-radius: 22px;
+  }
 
 
 
@@ -167,6 +210,7 @@ nav {
         height: 15%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
         .subSection-top, h3 {
