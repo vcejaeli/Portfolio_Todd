@@ -235,22 +235,31 @@ nav {
     color: black;
     text-align: left;
     columns: 50px 1;
+    position: relative;
+    display: flex;
 }
 
 .about h2 {
-    position: absolute;
-    top: 1220px;
-    left: 150px;
+    /* position: absolute; */
+    bottom: 32px;
+    left: 110px;
+    position: relative;
+    display: flex;
+
 }
 .about-p {
     font-size: 26px;
-    position: absolute;
+    /* position: absolute; */
     top: 1270px;
     left: 150px;
     width: 480px;
     height: 350px;
     word-spacing: 3px;
     line-height: 35px;
+
+    text-overflow: ellipsis;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
 }
 
 
